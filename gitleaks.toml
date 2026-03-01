@@ -1,0 +1,5 @@
+# Default rules are good enough to start. Keep this file so we can add allowlists
+# (e.g., test fixtures) later without changing CI wiring.
+
+[extend]
+useDefault = true

@@ -1,0 +1,3 @@
+# Let EAS generate native directories fresh each build
+ios/
+android/

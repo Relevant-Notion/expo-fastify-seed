@@ -1,0 +1,17 @@
+import * as React from "react";
+import { View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { Text } from "@seed/ui";
+
+export default function SettingsScreen() {
+  return (
+    <SafeAreaView className="flex-1 bg-background">
+      <View className="flex-1 items-center justify-center p-4">
+        <Text className="text-xl font-semibold">Settings</Text>
+        <Text className="text-muted-foreground mt-2">
+          Configure your app here.
+        </Text>
+      </View>
+    </SafeAreaView>
+  );
+}
