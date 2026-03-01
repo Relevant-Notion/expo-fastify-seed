@@ -2,7 +2,7 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "types": ["jest", "nativewind/types"],
+    "types": ["nativewind/types"],
     "paths": {
       "@/*": ["./src/*"]
     }

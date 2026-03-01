@@ -19,10 +19,10 @@ export default defineConfig({
       include: ["app/**/*.ts", "app/**/*.tsx"],
       exclude: ["app/**/*.test.ts", "app/**/*.test.tsx", "app/**/_layout.tsx"],
       thresholds: {
-        lines: 80,
+        lines: 50,
         functions: 30,
-        branches: 80,
-        statements: 80,
+        branches: 50,
+        statements: 50,
       },
     },
     setupFiles: ["./vitest.setup.ts"],

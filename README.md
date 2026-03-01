@@ -4,15 +4,15 @@ A production-ready monorepo seed for building API-backed mobile apps with **Expo
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Mobile | Expo 54, expo-router, NativeWind (Tailwind for RN) |
-| API | Fastify 5, Kysely (type-safe SQL), Postgres 16 |
-| Web Dashboard | Vite, React 19, Tailwind CSS 4, shadcn/ui |
-| Shared | Zod schemas, shared UI components |
-| Tooling | pnpm workspaces, TypeScript strict, Vitest, ESLint, Prettier, lefthook |
-| CI/CD | GitHub Actions (lint, test, typecheck), EAS Build |
-| Infrastructure | Docker Compose (Postgres + API) |
+| Layer          | Technology                                                             |
+| -------------- | ---------------------------------------------------------------------- |
+| Mobile         | Expo 54, expo-router, NativeWind (Tailwind for RN)                     |
+| API            | Fastify 5, Kysely (type-safe SQL), Postgres 16                         |
+| Web Dashboard  | Vite, React 19, Tailwind CSS 4, shadcn/ui                              |
+| Shared         | Zod schemas, shared UI components                                      |
+| Tooling        | pnpm workspaces, TypeScript strict, Vitest, ESLint, Prettier, lefthook |
+| CI/CD          | GitHub Actions (lint, test, typecheck), EAS Build                      |
+| Infrastructure | Docker Compose (Postgres + API)                                        |
 
 ## Quick Start
 
@@ -105,25 +105,26 @@ find . -type f -name '*.json' -o -name '*.ts' -o -name '*.tsx' | \
 ### Update mobile app identity
 
 Edit `apps/mobile/app.config.ts`:
+
 - Change `name`, `slug`, `scheme`
 - Update `bundleIdentifier` and `package`
 - Add your EAS `projectId`
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `pnpm install` | Install all dependencies |
-| `pnpm test` | Run all tests |
-| `pnpm typecheck` | Type check all packages |
-| `pnpm lint` | Lint all packages |
-| `pnpm format` | Format all files |
-| `pnpm format:check` | Check formatting |
-| `docker-compose up -d` | Start Postgres + API |
-| `pnpm --filter api dev` | Run API with hot reload |
-| `pnpm --filter mobile dev` | Start Expo dev server |
-| `pnpm --filter web dev` | Start web dev server |
-| `pnpm --filter api db:migrate` | Run database migrations |
+| Command                        | Description              |
+| ------------------------------ | ------------------------ |
+| `pnpm install`                 | Install all dependencies |
+| `pnpm test`                    | Run all tests            |
+| `pnpm typecheck`               | Type check all packages  |
+| `pnpm lint`                    | Lint all packages        |
+| `pnpm format`                  | Format all files         |
+| `pnpm format:check`            | Check formatting         |
+| `docker-compose up -d`         | Start Postgres + API     |
+| `pnpm --filter api dev`        | Run API with hot reload  |
+| `pnpm --filter mobile dev`     | Start Expo dev server    |
+| `pnpm --filter web dev`        | Start web dev server     |
+| `pnpm --filter api db:migrate` | Run database migrations  |
 
 ## License
 
